@@ -14,7 +14,7 @@ import ctypes
 def set_console_title(title):
     ctypes.windll.kernel32.SetConsoleTitleW(title)
 
-set_console_title("Zzz Nuker | .GG/CODERZ")   
+set_console_title("M1X Nuker | .gg/m1xontop")   
 
     
 __VERSION__ = '1.7382047493'  
@@ -44,15 +44,15 @@ headers = {
 
 
 
-def purplepink(text):
+def lightblue(text):
     os.system(""); faded = ""
     red = 120
     for line in text.splitlines():
-        faded += (f"\033[38;2;{red};0;220m{line}\033[0m\n")
-        if not red == 255:
-            red += 15
-            if red > 255:
-                red = 255
+        faded += (f"\033[38;2;{blue};0;220m{line}\033[0m\n")
+        if not blue == 255:
+            blue += 15
+            if blue > 255:
+                blue = 255
     return faded
 
         
@@ -219,14 +219,14 @@ async def main():
         
     logo = Center.XCenter(f"""     
 
-      ███████╗███████╗███████╗
-      ╚══███╔╝╚══███╔╝╚══███╔╝
-       ███╔╝   ███╔╝   ███╔╝ 
-      ███╔╝   ███╔╝   ███╔╝  
-      ███████╗███████╗███████╗
-      ╚══════╝╚══════╝╚══════╝
+  ███╗   ███╗     ██╗    ██╗  ██╗  
+  ████╗ ████║    ███║    ╚██╗██╔╝
+  ██╔████╔██║    ╚██║     ╚███╔╝ 
+  ██║╚██╔╝██║     ██║     ██╔██╗  
+  ██║ ╚═╝ ██║     ██║    ██╔╝ ██╗
+  ╚═╝     ╚═╝     ╚═╝    ╚═╝  ╚═╝
     ############################
-      mohit.4sure#0 || /CoderZ  
+     Ayush / Aditya || /m1xontop  
     ############################             
     """)
     time.sleep(0.0002)
@@ -238,7 +238,7 @@ async def main():
     """))
     print(Center.XCenter(f"""                                  
                           \033[38;2;255;0;205m╔══════════════════════════════╦═══════════════════════════════╗\033[0m
-                          \033[38;2;255;0;180m║   \033[37mVersion: {version.parse(__VERSION__)}      \033[38;2;255;0;180m║   \033[37mDev: AiZeR /CoderZ          \033[38;2;255;0;180m║
+                          \033[38;2;255;0;180m║   \033[37mVersion: {version.parse(__VERSION__)}      \033[38;2;255;0;180m║   \033[37mDev: Ayush / Aditya          \033[38;2;255;0;180m║
                           \033[38;2;255;0;155m╚══════════════════════════════╩═══════════════════════════════╝\033[0m
                  \033[38;2;255;0;130m╔══════════════════════════╦══════════════════════════╦════════════════════════╗\033[0m
                  \033[38;2;255;0;105m║   \033[37m[1] Delete Channels    \033[38;2;255;0;105m║    \033[37m[2] Delete Roles      \033[38;2;255;0;105m║    \033[37m[3] Ban Members     \033[38;2;255;0;105m║\033[0m
@@ -277,7 +277,7 @@ async def main():
         await asyncio.sleep(1)
         await main()        
     elif choose == '6':
-        web_name = "Ran By .GG/CODERZ"
+        web_name = ".gg/m1xontop"
         web_msg = input(Fore.LIGHTCYAN_EX+"                                        Webhook Content:  ")
         msg_amt = int(input(Fore.LIGHTCYAN_EX+"                                        Amount of Messages:  "))
         
